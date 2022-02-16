@@ -12,6 +12,7 @@ public class Cube : MonoBehaviour, ICollect
         if (collision.collider.TryGetComponent(out Cube collect))
         {
             // collect.CollectObject(collect);
+            CollectObject(collect);
         }
     }
 
